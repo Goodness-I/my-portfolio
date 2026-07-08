@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Goodness personal portfolio website, an aspiring Frontend Web Developer"
+    />
+    <title>Goodness Portfolio | Frontend Developer</title>
+    <link
+      rel="shortcut icon"
+      href="assests/imgs/Goody_favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Project Goal: Build a responsive portfolio website that contains: Homepage, About Section, Skills, Projects, Resume, Contact form, mobile responsive design. Technologies used: HTML5, CSS3, Js-->
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="logo">Goody</a>
+          <!-- Mobile navigation toggle button -->
+          <button
+            class="nav-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="nav-links"
+            type="button"
+          >
+            =
+          </button>
+          <!-- Navigation links for the single-page layout -->
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Hero -->
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="greeting">Hello 👋</p>
+            <h1>I'm <span>Goodness</span></h1>
+            <h2>A Frontend Web Developer</h2>
+            <p class="hero-description">
+              I build responsive, accessible and modern websites using HTML5, CSS3 and JavaScript while continuously improving my skills.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn">View Projects</a>
+              <a href="#resume" class="btn btn-outline" download
+                >Download resume</a
+              >
+            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="assests/imgs/Goody_profile.webp"
+              alt="portrait of Goody"
+              width="200"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- About -->
+      <section id="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <p>
+            I'm an aspiring Frontend Developer who enjoys turning ideas into
+            responsive websites. I enjoy learning web technologies, solving
+            problems and continuously improving my coding skills.
+          </p>
+        </div>
+      </section>
+      <!-- Skills -->
+      <section id="skills">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-grid">
+            <article class="skill-card">HTML5</article>
+            <article class="skill-card">CSS3</article>
+            <article class="skill-card">JavaScript</article>
+            <article class="skill-card">Responsive Design</article>
+          </div>
+        </div>
+      </section>
+      <!-- Projects -->
+      <section id="projects">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <img
+                src="assests/imgs/contact.jpg"
+                alt="Portfolio project"
+                width="200"
+                loading="lazy"
+              />
+              <h3>Personal Portfolio</h3>
+              <p>
+                Responsive portfolio website built with HTML, CSS, JavaScript.
+              </p>
+              <a href="#home" class="btn">View Project</a>
+            </article>
+            <article class="project-card">
+              <img
+                src="assests/imgs/showcase.jpg"
+                alt="landing page"
+                width="200"
+                loading="lazy"
+              />
+              <h3>Landing Page</h3>
+              <p>Modern responsive landing page created using flexbox.</p>
+              <a href="#" class="btn">View Project</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="resume">
+        <div class="container">
+          <h2 class="section-title">Resume</h2>
+          <a href="assests/doc/Goodie cv.docx" class="btn" download
+            >Download My Resume</a
+          >
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <h2 class="section-title">Contact Me</h2>
+          <!-- Contact form with validation and a success message -->
+          <form action="" class="contact-form">
+            <label for="name"> Name: </label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter your Name"
+              required
+            />
+            <label for="email"> Email Address: </label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter your Email"
+              required
+            />
+            <label for="message"> Message: </label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Enter your Message"
+              rows="6"
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-outline">Send Message</button>
+            <p
+              class="form-message"
+              id="form-message"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 Goodness. All Rights Reserved.</p>
+        <div class="social-links">
+          <a href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll-to-top button -->
+    <button
+      id="scroll-top"
+      class="scroll-top"
+      aria-label="Scroll to top"
+      type="button"
+    >
+      ↑
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>
