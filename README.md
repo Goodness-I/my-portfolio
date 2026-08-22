@@ -1,2 +1,2 @@
-# Code-Projects
+# My Portfolio
 Personal projects
