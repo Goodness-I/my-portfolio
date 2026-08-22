@@ -1,5 +1,5 @@
 # My Portfolio
 
-Personal project
+## Personal projects
 
-I want to cause conflict
+Personal projects
