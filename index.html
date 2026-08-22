@@ -11,7 +11,7 @@
     <title>Goodness Portfolio | Frontend Developer</title>
     <link
       rel="shortcut icon"
-      href="assests/imgs/Goody_favicon.ico"
+      href="./public/imgs/Goody_favicon.ico"
       type="image/x-icon"
     />
     <link
@@ -20,8 +20,8 @@
       integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="utility.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/utility.css" />
   </head>
   <body>
     <!-- Project Goal: Build a responsive portfolio website that contains: Homepage, About Section, Skills, Projects, Resume, Contact form, mobile responsive design. Technologies used: HTML5, CSS3, Js-->
@@ -62,7 +62,8 @@
             <h1>I'm <span>Goodness</span></h1>
             <h2>A Frontend Web Developer</h2>
             <p class="hero-description">
-              I build responsive, accessible and modern websites using HTML5, CSS3 and JavaScript while continuously improving my skills.
+              I build responsive, accessible and modern websites using HTML5,
+              CSS3 and JavaScript while continuously improving my skills.
             </p>
             <div class="hero-buttons">
               <a href="#projects" class="btn">View Projects</a>
@@ -73,7 +74,7 @@
           </div>
           <div class="hero-image">
             <img
-              src="assests/imgs/Goody_profile.webp"
+              src="./public/imgs/Goody_profile.webp"
               alt="portrait of Goody"
               width="200"
               loading="eager"
@@ -111,7 +112,7 @@
           <div class="projects-grid">
             <article class="project-card">
               <img
-                src="assests/imgs/contact.jpg"
+                src="./public/imgs/contact.jpg"
                 alt="Portfolio project"
                 width="200"
                 loading="lazy"
@@ -124,7 +125,7 @@
             </article>
             <article class="project-card">
               <img
-                src="assests/imgs/showcase.jpg"
+                src="./public/imgs/showcase.jpg"
                 alt="landing page"
                 width="200"
                 loading="lazy"
@@ -139,7 +140,7 @@
       <section id="resume">
         <div class="container">
           <h2 class="section-title">Resume</h2>
-          <a href="assests/doc/Goodie cv.docx" class="btn" download
+          <a href="./public/docs/Goodie cv.docx" class="btn" download
             >Download My Resume</a
           >
         </div>
@@ -172,12 +173,11 @@
               required
             ></textarea>
             <button type="submit" class="btn btn-outline">Send Message</button>
-            <p
+            <output
               class="form-message"
               id="form-message"
-              role="status"
               aria-live="polite"
-            ></p>
+            ></output>
           </form>
         </div>
       </section>
@@ -191,13 +191,7 @@
             <i class="fab fa-linkedin"></i>
           </a>
           <a href="#">
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
-          <a href="#">
             <i class="fab fa-github"></i>
-          </a>
-          <a href="#">
-            <i class="fa-brands fa-instagram"></i>
           </a>
         </div>
       </div>
@@ -211,6 +205,6 @@
     >
       ↑
     </button>
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
