@@ -1,0 +1,13 @@
+/* variables */
+:root{
+  --clr-primary: rgb(254, 215, 173);
+  /* --clr-primary-dark: #1d4ed8; */
+  --clr-dark: #222;
+  --clr-light: #fff;
+  --clr-gray: #666;
+  --clr-bg: linear-gradient(to right, rgb(255, 255, 255), rgb(254, 215, 173));
+  --radius: .5rem;
+  --shadow: 0 .3rem .8rem rgba(0,0,0,.12);
+  --transition: .3s ease;
+  --max-width: 1200px;
+}
